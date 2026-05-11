@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental & Specialty Services | Furaha Medical Care</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dental-hero {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            text-align: center;
+            color: white;
+            padding: 5.5rem 1.25rem;
+        }
+
+        .dental-hero h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+
+        .department-section {
+            margin: 4rem 0;
+            padding: 3rem 0;
+            border-top: 2px solid var(--border);
+        }
+
+        .department-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .department-header h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .department-header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(8, 42, 74, 0.18);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 1.5rem;
+            background: white;
+        }
+
+        .gallery-caption h4 {
+            color: var(--primary);
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .gallery-caption p {
+            color: var(--muted);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .department-description {
+            background: var(--surface-tint);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .department-description h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .service-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid var(--border);
+            transition: border-color 0.3s ease;
+        }
+
+        .highlight-box:hover {
+            border-color: var(--secondary);
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .highlight-box p {
+            color: var(--muted);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Furaha Medical Care</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dental.html">Dental & Specialty</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="dental-hero">
+        <h1>Dental & Specialty Services</h1>
+        <p>Comprehensive dental care, maternity support, optical services, and ward facilities</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <!-- DENTAL SERVICES -->
+            <div class="department-section">
+                <div class="department-header">
+                    <h2>🦷 Dental Services</h2>
+                    <p>Professional dental care for the whole family, from routine cleanings to specialized treatments</p>
+                </div>
+
+                <div class="department-description">
+                    <h3>Your Smile is Our Priority</h3>
+                    <p>Our dental clinic offers comprehensive oral health services delivered by qualified professionals. We use modern equipment and sterilization protocols to ensure patient safety and comfort. Whether you need preventive care, cosmetic treatments, or emergency dental support, we're here to keep your smile healthy.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/dental.jpg" alt="Dental consultation area">
+                        <div class="gallery-caption">
+                            <h4>Consultation Rooms</h4>
+                            <p>Modern, comfortable facilities for initial assessments and treatment planning</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dental1.jpg" alt="Dental treatment station">
+                        <div class="gallery-caption">
+                            <h4>Advanced Treatment</h4>
+                            <p>State-of-the-art equipment for efficient and painless dental procedures</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dental2.jpg" alt="Dental hygiene service">
+                        <div class="gallery-caption">
+                            <h4>Professional Cleaning</h4>
+                            <p>Regular cleaning and maintenance to prevent dental diseases</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dental3.jpg" alt="Pediatric dental care">
+                        <div class="gallery-caption">
+                            <h4>Pediatric Care</h4>
+                            <p>Gentle, child-friendly dental services for young patients</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dental4.jpg" alt="Cosmetic dentistry">
+                        <div class="gallery-caption">
+                            <h4>Cosmetic Dentistry</h4>
+                            <p>Enhance your smile with whitening and aesthetic treatments</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dental5.jpg" alt="Emergency dental services">
+                        <div class="gallery-caption">
+                            <h4>Emergency Services</h4>
+                            <p>24/7 availability for urgent dental needs and pain relief</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-highlights">
+                    <div class="highlight-box">
+                        <h4>✓ Preventive Care</h4>
+                        <p>Regular checkups, cleanings, and fluoride treatments to maintain healthy teeth</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Restorative Treatment</h4>
+                        <p>Fillings, crowns, bridges, and dentures to restore dental function</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Periodontal Care</h4>
+                        <p>Gum disease treatment and scaling for optimal oral health</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATERNITY SERVICES -->
+            <div class="department-section">
+                <div class="department-header">
+                    <h2>👶 Maternity & Women's Health</h2>
+                    <p>Compassionate, comprehensive care for mothers and babies throughout pregnancy, delivery, and beyond</p>
+                </div>
+
+                <div class="department-description">
+                    <h3>Bringing New Life Into the World</h3>
+                    <p>Our maternity department is dedicated to providing safe, respectful, and patient-centered care. From antenatal consultations through postnatal support, our experienced team ensures the well-being of both mother and baby. We provide 24/7 delivery services, newborn care, and lactation support.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/mat1.jpg" alt="Antenatal clinic">
+                        <div class="gallery-caption">
+                            <h4>Antenatal Care</h4>
+                            <p>Regular monitoring and health education throughout pregnancy</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/mat2.jpg" alt="Maternity ward">
+                        <div class="gallery-caption">
+                            <h4>Labour & Delivery</h4>
+                            <p>Safe, comfortable delivery facilities with trained attendants</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/mat3.jpg" alt="Postpartum care">
+                        <div class="gallery-caption">
+                            <h4>Postnatal Support</h4>
+                            <p>Comprehensive care for mother and newborn in first weeks of life</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-highlights">
+                    <div class="highlight-box">
+                        <h4>✓ Antenatal Services</h4>
+                        <p>Ultrasound scans, blood tests, risk assessment, and health education</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Safe Delivery</h4>
+                        <p>Skilled attendance at birth with emergency obstetric care available</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Newborn Care</h4>
+                        <p>Initial assessment, vaccination, and pediatric evaluation for all newborns</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Lactation Support</h4>
+                        <p>Breastfeeding counseling and support from trained lactation specialists</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPTICAL SERVICES -->
+            <div class="department-section">
+                <div class="department-header">
+                    <h2>👁️ Optical Services</h2>
+                    <p>Complete vision care including eye examinations, prescription glasses, and contact lenses</p>
+                </div>
+
+                <div class="department-description">
+                    <h3>Clear Vision for Better Health</h3>
+                    <p>Our optical department provides comprehensive eye care services to ensure clear vision and eye health. Our trained opticians conduct thorough eye examinations and offer quality eyewear solutions tailored to your needs. We serve patients of all ages with affordable, professional vision correction.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/optical.jpg" alt="Optical examination room">
+                        <div class="gallery-caption">
+                            <h4>Eye Examination</h4>
+                            <p>Professional vision assessment using modern diagnostic equipment</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/optical1.jpg" alt="Eyeglass display">
+                        <div class="gallery-caption">
+                            <h4>Eyeglasses</h4>
+                            <p>Wide selection of frames and lenses for every vision need</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/optical3.jpg" alt="Vision correction service">
+                        <div class="gallery-caption">
+                            <h4>Vision Correction</h4>
+                            <p>Personalized prescriptions for optimal clarity and comfort</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-highlights">
+                    <div class="highlight-box">
+                        <h4>✓ Eye Tests</h4>
+                        <p>Comprehensive vision screening and refractive error assessment</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Eyeglasses</h4>
+                        <p>Quality frames and precision lenses at affordable prices</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Pediatric Vision</h4>
+                        <p>Specialized eye care and corrective services for children</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Eye Health</h4>
+                        <p>Detection and management of common eye conditions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WARD FACILITIES -->
+            <div class="department-section">
+                <div class="department-header">
+                    <h2>🏥 Ward Facilities</h2>
+                    <p>Comfortable, well-equipped inpatient wards providing 24-hour nursing and medical care</p>
+                </div>
+
+                <div class="department-description">
+                    <h3>Comfort and Quality Care During Recovery</h3>
+                    <p>Our wards are designed to provide a comfortable environment for patient recovery while maintaining the highest standards of medical care. With dedicated nursing staff and modern amenities, we ensure every patient receives attentive care. Our wards include male, female, pediatric, and private rooms to meet diverse patient needs.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/ward.jpg" alt="Ward facilities">
+                        <div class="gallery-caption">
+                            <h4>General Ward</h4>
+                            <p>Well-organized beds with essential facilities for standard inpatient care</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/ward13.jpg" alt="Private ward room">
+                        <div class="gallery-caption">
+                            <h4>Private Rooms</h4>
+                            <p>Individual rooms with enhanced privacy and personal care options</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/bed.jpg" alt="Modern hospital bed">
+                        <div class="gallery-caption">
+                            <h4>Modern Beds</h4>
+                            <p>Comfortable, adjustable beds designed for patient comfort and care access</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-highlights">
+                    <div class="highlight-box">
+                        <h4>✓ 24/7 Nursing</h4>
+                        <p>Trained nursing staff available round the clock for patient care and monitoring</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Ward Types</h4>
+                        <p>Male, female, pediatric, and private wards tailored to patient needs</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Essential Amenities</h4>
+                        <p>Water, electricity, visitor facilities, and basic comfort items</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>✓ Medical Support</h4>
+                        <p>Regular physician rounds and continuous patient monitoring systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="care-strip">
+            <div class="container">
+                <div class="section-heading compact">
+                    <h2>Ready to Access Our Services?</h2>
+                    <p>Contact us today to book an appointment or inquire about our specialty services</p>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contact.html" class="btn" style="display: inline-block; padding: 0.75rem 2rem; background: var(--secondary); color: white; text-decoration: none; border-radius: 4px; font-weight: 600;">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Furaha Medical Care. Level 4 Licensed Facility. Comprehensive Dental & Specialty Services.</p>
+    </footer>
+</body>
+</html>
